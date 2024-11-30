@@ -1,0 +1,98 @@
+/* app.css */
+
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Gothic vibe font */
+    color: #ffffff; /* White text for dark background */
+    background-color: #1c1c1e; /* Dark gothic background */
+}
+
+/* Header Styling */
+h3 {
+    font-size: 2rem;
+    color: #e0e0e0; /* Slightly muted white */
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #444; /* Subtle border for separation */
+}
+
+/* Track List */
+.tracks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Track Card */
+.track {
+    background-color: #2c2c2e; /* Slightly lighter dark */
+    border: 1px solid #444; /* Subtle border */
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.track:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Track Image */
+.track img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555; /* Frame the image */
+}
+
+/* Track Title */
+.track h4 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: #f5a623; /* Accent color for titles */
+}
+
+/* Artist and Played At Text */
+.track p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #bbbbbb;
+}
+
+/* Audio Player */
+audio {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #444; /* Frame audio player */
+    border-radius: 5px;
+    background-color: #1c1c1e; /* Match the theme */
+}
+
+/* Loading State */
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #bbbbbb;
+}
+
+/* Gothic Accent Colors for Buttons, Links (Future Use) */
+button, a {
+    background-color: #444;
+    color: #f5a623;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+button:hover, a:hover {
+    background-color: #f5a623;
+    color: #1c1c1e;
+}

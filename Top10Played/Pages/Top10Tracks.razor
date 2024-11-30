@@ -1,0 +1,93 @@
+@page "/"
+@using Top10Played.Services
+@inject SpotifyService SpotifyService
+
+<h1 style="font-family: 'Cinzel', serif; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); color: #ff4500; text-align: center; margin-top: 20px;">
+    ☾ Recently Played Tracks ☽
+</h1>
+
+<div style="font-family: 'Cinzel', serif; font-size: 18px; font-weight: bold; text-align: center; margin-top: 10px; color: #cccccc;">
+    <p>Ｉ'ｍ Ｙ☯ＵＮＧＪＩＮＳＵ ☾</p>
+    <p>✧ Ｉｆ ｙｏｕ ｃａｎ ｖｉｂｅ ｗｉｔｈ ｔｈｅｓｅ ｓｏｎｇｓ, ｗｅ ｃａｎ ｂｅ ｆｒｉｅｎｄｓ.</p>
+    <p>☠ Ｉｆ ｎｏｔ, ｇｅｔ ｂｅｔｔｅｒ ｍｕｓｉｃ ｔａｓｔｅ. ☠</p>
+    <p style="margin-top: 15px;">👾 𝕀𝕟𝕥𝕖𝕣𝕖𝕤𝕥𝕤:</p>
+    <p>🎮 𝐆𝐚𝐦𝐞𝐫 • 🛡️ 𝐕𝐞𝐭𝐞𝐫𝐚𝐧 • 🏋️ 𝐆𝐲𝐦 • ✨ 𝐀𝐧𝐢𝐦𝐞</p>
+    <p>🎵 𝐒𝐮𝐢𝐜𝐢𝐝𝐞 𝐁𝐨𝐲𝐬 • 👻 𝐆𝐡𝐨𝐬𝐭𝐞𝐦𝐚𝐧𝐞 • 🅿 𝐏𝐡𝐨𝐧𝐤</p>
+</div>
+
+@if (!string.IsNullOrEmpty(ErrorMessage))
+{
+    <div class="error-message" style="color: red; text-align: center; margin-top: 20px;">
+        <p>@ErrorMessage</p>
+    </div>
+}
+else if (RecentlyPlayed == null)
+{
+    <p style="text-align: center; color: gray; margin-top: 20px;">Loading...</p>
+}
+else
+{
+    <div class="tracks" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;">
+        @foreach (var item in RecentlyPlayed)
+        {
+            <div class="track" style="border: 1px solid #ddd; border-radius: 8px; padding: 10px; text-align: center; width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <img src="@item.Track.Album.Images.FirstOrDefault()?.Url" alt="@item.Track.Name" style="width: 100%; height: auto; border-radius: 8px;" />
+                <h4 style="font-family: 'Cinzel', serif; font-size: 16px; color: #333; margin-top: 10px;">@item.Track.Name</h4>
+                <p style="font-size: 14px; color: gray;">Artist: @string.Join(", ", item.Track.Artists.Select(a => a.Name))</p>
+                <p style="font-size: 12px; color: #777;">Played: @GetTimeAgo(item.PlayedAt)</p>
+                @if (!string.IsNullOrEmpty(item.Track.PreviewUrl))
+                {
+                    <audio controls style="width: 100%; margin-top: 10px;">
+                        <source src="@item.Track.PreviewUrl" type="audio/mpeg" />
+                    </audio>
+                }
+                else
+                {
+                    <p style="font-size: 12px; color: #E74C3C;">No preview available</p>
+                }
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<SpotifyRecentlyPlayedItem>? RecentlyPlayed;
+    private string? ErrorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            RecentlyPlayed = await SpotifyService.GetRecentlyPlayedAsync();
+        }
+        catch (UnauthorizedAccessException)
+        {
+            ErrorMessage = "Failed to fetch recently played tracks. Please check your access token.";
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"An unexpected error occurred: {ex.Message}";
+        }
+    }
+
+    private string GetTimeAgo(DateTime playedAt)
+    {
+        var localPlayedAt = TimeZoneInfo.ConvertTimeFromUtc(playedAt, TimeZoneInfo.Local);
+        var now = DateTime.Now;
+        var difference = now - localPlayedAt;
+
+        if (difference.TotalMinutes < 1)
+        {
+            return "just now";
+        }
+        if (difference.TotalMinutes < 60)
+        {
+            return $"{Math.Floor(difference.TotalMinutes)} minutes ago";
+        }
+        if (difference.TotalHours < 24)
+        {
+            return $"{Math.Floor(difference.TotalHours)} hours ago";
+        }
+        return $"{Math.Floor(difference.TotalDays)} days ago";
+    }
+}
