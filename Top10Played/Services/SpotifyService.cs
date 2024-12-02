@@ -1,7 +1,7 @@
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
-using System.Text.Json.Serialization;
+using Top10Played.Models;
 
 namespace Top10Played.Services;
 
@@ -87,66 +87,4 @@ public class SpotifyService
 
         return recentlyPlayed?.Items ?? new List<SpotifyRecentlyPlayedItem>();
     }
-}
-
-// Models for Token Response
-public class SpotifyTokenResponse
-{
-    [JsonPropertyName("access_token")]
-    public string AccessToken { get; set; }
-
-    [JsonPropertyName("refresh_token")]
-    public string RefreshToken { get; set; }
-
-    [JsonPropertyName("expires_in")]
-    public int ExpiresIn { get; set; }
-}
-
-// Models for Recently Played Response
-public class SpotifyRecentlyPlayedResponse
-{
-    [JsonPropertyName("items")]
-    public List<SpotifyRecentlyPlayedItem> Items { get; set; } = new();
-}
-
-public class SpotifyRecentlyPlayedItem
-{
-    [JsonPropertyName("track")]
-    public SpotifyTrack Track { get; set; }
-
-    [JsonPropertyName("played_at")]
-    public DateTime PlayedAt { get; set; }
-}
-
-public class SpotifyTrack
-{
-    [JsonPropertyName("name")]
-    public string Name { get; set; }
-
-    [JsonPropertyName("artists")]
-    public List<SpotifyArtist> Artists { get; set; } = new();
-
-    [JsonPropertyName("album")]
-    public SpotifyAlbum Album { get; set; }
-
-    [JsonPropertyName("preview_url")]
-    public string PreviewUrl { get; set; }
-}
-
-public class SpotifyArtist
-{
-    [JsonPropertyName("name")]
-    public string Name { get; set; }
-}
-
-public class SpotifyAlbum
-{
-    [JsonPropertyName("images")]
-    public List<SpotifyImage> Images { get; set; } = new();
-}
-
-public class SpotifyImage
-{
-    [JsonPropertyName("url")]
-    public string Url { get; set; }
 }
