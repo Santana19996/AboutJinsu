@@ -30,21 +30,11 @@ else
     <div class="tracks" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;">
         @foreach (var item in RecentlyPlayed)
         {
-            <div class="track" style="border: 1px solid #ddd; border-radius: 8px; padding: 10px; text-align: center; width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <div class="track" style="border: 1px solid #ddd; border-radius: 8px; padding: 10px; text-align: center; width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: rgba(0, 0, 0, 0.8);">
                 <img src="@item.Track.Album.Images.FirstOrDefault()?.Url" alt="@item.Track.Name" style="width: 100%; height: auto; border-radius: 8px;" />
-                <h4 style="font-family: 'Cinzel', serif; font-size: 16px; color: #333; margin-top: 10px;">@item.Track.Name</h4>
-                <p style="font-size: 14px; color: gray;">Artist: @string.Join(", ", item.Track.Artists.Select(a => a.Name))</p>
-                <p style="font-size: 12px; color: #777;">Played: @GetTimeAgo(item.PlayedAt)</p>
-                @if (!string.IsNullOrEmpty(item.Track.PreviewUrl))
-                {
-                    <audio controls style="width: 100%; margin-top: 10px;">
-                        <source src="@item.Track.PreviewUrl" type="audio/mpeg" />
-                    </audio>
-                }
-                else
-                {
-                    <p style="font-size: 12px; color: #E74C3C;">No preview available</p>
-                }
+                <h4 style="font-family: 'Cinzel', serif; font-size: 18px; font-weight: bold; color: #ff4500; margin-top: 10px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);">@item.Track.Name</h4>
+                <p style="font-size: 14px; color: #cccccc;">Artist: @string.Join(", ", item.Track.Artists.Select(a => a.Name))</p>
+                <p style="font-size: 12px; color: #aaaaaa;">Played: @GetTimeAgo(item.PlayedAt)</p>
             </div>
         }
     </div>
