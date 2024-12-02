@@ -1,6 +1,1 @@
-# PersonalPage
-# PersonalPage
-# PersonalPage
-# AboutJinsu
-# AboutJinsu
-# AboutJinsu
+# Lean about my music taste and you'll know me
