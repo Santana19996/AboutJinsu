@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gCbIQR2t3BeghN9laEnZa6gBV2CthOVI1UGXNwjKf6w=",
+  "Hash": "Sn0yukdODUXAYE/M6zSnL08jzEovlsYY/yfqQeud+9Q=",
   "Source": "Top10Played",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "vjq3x5e6tp",
-      "Integrity": "K/7+v1exIyRbY801AMLQEB5s5CqbQAfEgvT/8oE9I1U=",
+      "Fingerprint": "jnn05wltp3",
+      "Integrity": "QVNsw/Xp3vSHOa48xx/6j/bVQAC8IeXqHCNeySSAJ2Y=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net9.0/blazor.boot.json"
@@ -4252,8 +4252,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "7u9drcer5j",
-      "Integrity": "8UEenY4YCA3Wg+dDtg5EOeQT3ew4NypMA4kJvXdG/iM=",
+      "Fingerprint": "tlovfr0fhi",
+      "Integrity": "UQkFzgr1kLFAFJiApxKb3UDNec49QG2JLyOvD1F1Mmo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net9.0/Top10Played.pdb"
@@ -4273,8 +4273,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "ntcue1305b",
-      "Integrity": "az4Vp8fPOvxLPuSwnk2bPY5Brfs2HwTtLgok1ab/gA4=",
+      "Fingerprint": "vt7hz7qob4",
+      "Integrity": "HZ+v4XSwCfjY3DAmp4/PQYF6Qsm8s078JdkbqLkvJ/Y=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/webcil/Top10Played.wasm"
@@ -4847,7 +4847,7 @@
       "OriginalItemSpec": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/System.Net.Http.wasm"
     },
     {
-      "Identity": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/4358hbt203-vjq3x5e6tp.gz",
+      "Identity": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/4358hbt203-jnn05wltp3.gz",
       "SourceId": "Top10Played",
       "SourceType": "Computed",
       "ContentRoot": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/",
@@ -4861,8 +4861,8 @@
       "RelatedAsset": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ue0auygg9t",
-      "Integrity": "lsYjvVCVEi8fhyKgmnfxxSFKYziaNpfxPYyupRtas/E=",
+      "Fingerprint": "o6b0sy21lp",
+      "Integrity": "oPwM4dBF4Yoo9MD8HQbvgP6KwRnoJb7ZRwmp9x3BIcE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json"
@@ -6042,6 +6042,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/System.Data.Common.wasm"
+    },
+    {
+      "Identity": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/cso1owb7si-dt9ecvgd4x.gz",
+      "SourceId": "Top10Played",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/",
+      "BasePath": "/",
+      "RelativePath": "appsettings#[.{fingerprint=dt9ecvgd4x}]?.json.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/wwwroot/appsettings.json",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "9se6twcl4i",
+      "Integrity": "WU1MejWVB55kl/MYVxwvvMreTbBaPARgekvC/s0rqhM=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/wwwroot/appsettings.json"
     },
     {
       "Identity": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/cswv24gk87-ic45gpxjv4.gz",
@@ -7325,12 +7346,12 @@
       "OriginalItemSpec": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/System.Net.Http.Json.wasm"
     },
     {
-      "Identity": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/lcdvsgxnpk-ntcue1305b.gz",
+      "Identity": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/lcdvsgxnpk-vt7hz7qob4.gz",
       "SourceId": "Top10Played",
       "SourceType": "Computed",
       "ContentRoot": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/",
       "BasePath": "/",
-      "RelativePath": "_framework/Top10Played#[.{fingerprint=ntcue1305b}]!.wasm.gz",
+      "RelativePath": "_framework/Top10Played#[.{fingerprint=vt7hz7qob4}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7339,8 +7360,8 @@
       "RelatedAsset": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/Top10Played.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "3uehe47rkm",
-      "Integrity": "pQycjkfNB+mEP8wBY1SGpbv7eBIPehq4yXBLLyafwng=",
+      "Fingerprint": "iti83su0d2",
+      "Integrity": "ujsaGFrGSe7Ea2lmsnUlIAnExCGQRdaSLtPcugnNe8A=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/Top10Played.wasm"
@@ -7535,12 +7556,12 @@
       "OriginalItemSpec": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/System.Security.Cryptography.Algorithms.wasm"
     },
     {
-      "Identity": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/nejm41th4g-7u9drcer5j.gz",
+      "Identity": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/nejm41th4g-tlovfr0fhi.gz",
       "SourceId": "Top10Played",
       "SourceType": "Computed",
       "ContentRoot": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/",
       "BasePath": "/",
-      "RelativePath": "_framework/Top10Played#[.{fingerprint=7u9drcer5j}]!.pdb.gz",
+      "RelativePath": "_framework/Top10Played#[.{fingerprint=tlovfr0fhi}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7549,8 +7570,8 @@
       "RelatedAsset": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/Top10Played.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "95ulwczrxe",
-      "Integrity": "3UvMgiiOYMNzdlDhEEQvDahI/Md/GtCMuivn8HgtXdM=",
+      "Fingerprint": "0i86daw4z4",
+      "Integrity": "ePpF2o40m5LTrWDta2cINT709unq7IRoT4Vw/mgBxdQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/Top10Played.pdb"
@@ -9572,6 +9593,27 @@
       "OriginalItemSpec": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/System.Runtime.Serialization.Primitives.wasm"
     },
     {
+      "Identity": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/wwwroot/appsettings.json",
+      "SourceId": "Top10Played",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "appsettings#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "settings",
+      "Fingerprint": "dt9ecvgd4x",
+      "Integrity": "MdEpMR1C1m4yxLE//P9vkVybURdzCXUeUP6jfVuzyGk=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/appsettings.json"
+    },
+    {
       "Identity": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/wwwroot/css/app.css",
       "SourceId": "Top10Played",
       "SourceType": "Discovered",
@@ -10579,11 +10621,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"K/7+v1exIyRbY801AMLQEB5s5CqbQAfEgvT/8oE9I1U=\""
+          "Value": "\"QVNsw/Xp3vSHOa48xx/6j/bVQAC8IeXqHCNeySSAJ2Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:23 GMT"
+          "Value": "Mon, 02 Dec 2024 04:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10593,18 +10635,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-K/7+v1exIyRbY801AMLQEB5s5CqbQAfEgvT/8oE9I1U="
+          "Value": "sha256-QVNsw/Xp3vSHOa48xx/6j/bVQAC8IeXqHCNeySSAJ2Y="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/4358hbt203-vjq3x5e6tp.gz",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/4358hbt203-jnn05wltp3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000081254571"
+          "Quality": "0.000081043845"
         }
       ],
       "ResponseHeaders": [
@@ -10614,15 +10656,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12306"
+          "Value": "12338"
         },
         {
           "Name": "ETag",
-          "Value": "\"lsYjvVCVEi8fhyKgmnfxxSFKYziaNpfxPYyupRtas/E=\""
+          "Value": "\"oPwM4dBF4Yoo9MD8HQbvgP6KwRnoJb7ZRwmp9x3BIcE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:28:48 GMT"
+          "Value": "Mon, 02 Dec 2024 03:59:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10642,19 +10684,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"K/7+v1exIyRbY801AMLQEB5s5CqbQAfEgvT/8oE9I1U=\""
+          "Value": "W/\"QVNsw/Xp3vSHOa48xx/6j/bVQAC8IeXqHCNeySSAJ2Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-K/7+v1exIyRbY801AMLQEB5s5CqbQAfEgvT/8oE9I1U="
+          "Value": "sha256-QVNsw/Xp3vSHOa48xx/6j/bVQAC8IeXqHCNeySSAJ2Y="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/4358hbt203-vjq3x5e6tp.gz",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/4358hbt203-jnn05wltp3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10663,7 +10705,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12306"
+          "Value": "12338"
         },
         {
           "Name": "Content-Type",
@@ -10671,11 +10713,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lsYjvVCVEi8fhyKgmnfxxSFKYziaNpfxPYyupRtas/E=\""
+          "Value": "\"oPwM4dBF4Yoo9MD8HQbvgP6KwRnoJb7ZRwmp9x3BIcE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:28:48 GMT"
+          "Value": "Mon, 02 Dec 2024 03:59:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10693,7 +10735,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lsYjvVCVEi8fhyKgmnfxxSFKYziaNpfxPYyupRtas/E="
+          "Value": "sha256-oPwM4dBF4Yoo9MD8HQbvgP6KwRnoJb7ZRwmp9x3BIcE="
         }
       ]
     },
@@ -70137,7 +70179,7 @@
       ]
     },
     {
-      "Route": "_framework/Top10Played.7u9drcer5j.pdb",
+      "Route": "_framework/Top10Played.pdb",
       "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/Top10Played.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -70147,7 +70189,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22432"
+          "Value": "22744"
         },
         {
           "Name": "Content-Type",
@@ -70155,40 +70197,32 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8UEenY4YCA3Wg+dDtg5EOeQT3ew4NypMA4kJvXdG/iM=\""
+          "Value": "\"UQkFzgr1kLFAFJiApxKb3UDNec49QG2JLyOvD1F1Mmo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:22 GMT"
+          "Value": "Mon, 02 Dec 2024 04:01:46 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "7u9drcer5j"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Top10Played.pdb"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-8UEenY4YCA3Wg+dDtg5EOeQT3ew4NypMA4kJvXdG/iM="
+          "Value": "sha256-UQkFzgr1kLFAFJiApxKb3UDNec49QG2JLyOvD1F1Mmo="
         }
       ]
     },
     {
-      "Route": "_framework/Top10Played.7u9drcer5j.pdb",
-      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/nejm41th4g-7u9drcer5j.gz",
+      "Route": "_framework/Top10Played.pdb",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/nejm41th4g-tlovfr0fhi.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000069666992"
+          "Quality": "0.000068577699"
         }
       ],
       "ResponseHeaders": [
@@ -70198,19 +70232,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14353"
+          "Value": "14581"
         },
         {
           "Name": "ETag",
-          "Value": "\"3UvMgiiOYMNzdlDhEEQvDahI/Md/GtCMuivn8HgtXdM=\""
+          "Value": "\"ePpF2o40m5LTrWDta2cINT709unq7IRoT4Vw/mgBxdQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:23 GMT"
+          "Value": "Mon, 02 Dec 2024 04:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -70226,27 +70260,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8UEenY4YCA3Wg+dDtg5EOeQT3ew4NypMA4kJvXdG/iM=\""
+          "Value": "W/\"UQkFzgr1kLFAFJiApxKb3UDNec49QG2JLyOvD1F1Mmo=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "7u9drcer5j"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Top10Played.pdb"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-8UEenY4YCA3Wg+dDtg5EOeQT3ew4NypMA4kJvXdG/iM="
+          "Value": "sha256-UQkFzgr1kLFAFJiApxKb3UDNec49QG2JLyOvD1F1Mmo="
         }
       ]
     },
     {
-      "Route": "_framework/Top10Played.7u9drcer5j.pdb.gz",
-      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/nejm41th4g-7u9drcer5j.gz",
+      "Route": "_framework/Top10Played.pdb.gz",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/nejm41th4g-tlovfr0fhi.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70255,7 +70281,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14353"
+          "Value": "14581"
         },
         {
           "Name": "Content-Type",
@@ -70263,11 +70289,164 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3UvMgiiOYMNzdlDhEEQvDahI/Md/GtCMuivn8HgtXdM=\""
+          "Value": "\"ePpF2o40m5LTrWDta2cINT709unq7IRoT4Vw/mgBxdQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:23 GMT"
+          "Value": "Mon, 02 Dec 2024 04:01:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ePpF2o40m5LTrWDta2cINT709unq7IRoT4Vw/mgBxdQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Top10Played.tlovfr0fhi.pdb",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/Top10Played.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22744"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UQkFzgr1kLFAFJiApxKb3UDNec49QG2JLyOvD1F1Mmo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Dec 2024 04:01:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tlovfr0fhi"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Top10Played.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UQkFzgr1kLFAFJiApxKb3UDNec49QG2JLyOvD1F1Mmo="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Top10Played.tlovfr0fhi.pdb",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/nejm41th4g-tlovfr0fhi.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000068577699"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14581"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ePpF2o40m5LTrWDta2cINT709unq7IRoT4Vw/mgBxdQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Dec 2024 04:01:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"UQkFzgr1kLFAFJiApxKb3UDNec49QG2JLyOvD1F1Mmo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tlovfr0fhi"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Top10Played.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UQkFzgr1kLFAFJiApxKb3UDNec49QG2JLyOvD1F1Mmo="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Top10Played.tlovfr0fhi.pdb.gz",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/nejm41th4g-tlovfr0fhi.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14581"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ePpF2o40m5LTrWDta2cINT709unq7IRoT4Vw/mgBxdQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Dec 2024 04:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70285,7 +70464,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7u9drcer5j"
+          "Value": "tlovfr0fhi"
         },
         {
           "Name": "label",
@@ -70293,12 +70472,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3UvMgiiOYMNzdlDhEEQvDahI/Md/GtCMuivn8HgtXdM="
+          "Value": "sha256-ePpF2o40m5LTrWDta2cINT709unq7IRoT4Vw/mgBxdQ="
         }
       ]
     },
     {
-      "Route": "_framework/Top10Played.ntcue1305b.wasm",
+      "Route": "_framework/Top10Played.vt7hz7qob4.wasm",
       "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/Top10Played.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -70308,7 +70487,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29461"
+          "Value": "30485"
         },
         {
           "Name": "Content-Type",
@@ -70316,11 +70495,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"az4Vp8fPOvxLPuSwnk2bPY5Brfs2HwTtLgok1ab/gA4=\""
+          "Value": "\"HZ+v4XSwCfjY3DAmp4/PQYF6Qsm8s078JdkbqLkvJ/Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:22 GMT"
+          "Value": "Mon, 02 Dec 2024 03:59:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70330,7 +70509,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ntcue1305b"
+          "Value": "vt7hz7qob4"
         },
         {
           "Name": "label",
@@ -70338,18 +70517,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-az4Vp8fPOvxLPuSwnk2bPY5Brfs2HwTtLgok1ab/gA4="
+          "Value": "sha256-HZ+v4XSwCfjY3DAmp4/PQYF6Qsm8s078JdkbqLkvJ/Y="
         }
       ]
     },
     {
-      "Route": "_framework/Top10Played.ntcue1305b.wasm",
-      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/lcdvsgxnpk-ntcue1305b.gz",
+      "Route": "_framework/Top10Played.vt7hz7qob4.wasm",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/lcdvsgxnpk-vt7hz7qob4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000077519380"
+          "Quality": "0.000075244545"
         }
       ],
       "ResponseHeaders": [
@@ -70359,15 +70538,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12899"
+          "Value": "13289"
         },
         {
           "Name": "ETag",
-          "Value": "\"pQycjkfNB+mEP8wBY1SGpbv7eBIPehq4yXBLLyafwng=\""
+          "Value": "\"ujsaGFrGSe7Ea2lmsnUlIAnExCGQRdaSLtPcugnNe8A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:23 GMT"
+          "Value": "Mon, 02 Dec 2024 03:59:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70387,13 +70566,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"az4Vp8fPOvxLPuSwnk2bPY5Brfs2HwTtLgok1ab/gA4=\""
+          "Value": "W/\"HZ+v4XSwCfjY3DAmp4/PQYF6Qsm8s078JdkbqLkvJ/Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ntcue1305b"
+          "Value": "vt7hz7qob4"
         },
         {
           "Name": "label",
@@ -70401,13 +70580,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-az4Vp8fPOvxLPuSwnk2bPY5Brfs2HwTtLgok1ab/gA4="
+          "Value": "sha256-HZ+v4XSwCfjY3DAmp4/PQYF6Qsm8s078JdkbqLkvJ/Y="
         }
       ]
     },
     {
-      "Route": "_framework/Top10Played.ntcue1305b.wasm.gz",
-      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/lcdvsgxnpk-ntcue1305b.gz",
+      "Route": "_framework/Top10Played.vt7hz7qob4.wasm.gz",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/lcdvsgxnpk-vt7hz7qob4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70416,7 +70595,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12899"
+          "Value": "13289"
         },
         {
           "Name": "Content-Type",
@@ -70424,11 +70603,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pQycjkfNB+mEP8wBY1SGpbv7eBIPehq4yXBLLyafwng=\""
+          "Value": "\"ujsaGFrGSe7Ea2lmsnUlIAnExCGQRdaSLtPcugnNe8A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:23 GMT"
+          "Value": "Mon, 02 Dec 2024 03:59:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70446,7 +70625,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ntcue1305b"
+          "Value": "vt7hz7qob4"
         },
         {
           "Name": "label",
@@ -70454,144 +70633,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pQycjkfNB+mEP8wBY1SGpbv7eBIPehq4yXBLLyafwng="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Top10Played.pdb",
-      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/bin/Debug/net9.0/wwwroot/_framework/Top10Played.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "22432"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8UEenY4YCA3Wg+dDtg5EOeQT3ew4NypMA4kJvXdG/iM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8UEenY4YCA3Wg+dDtg5EOeQT3ew4NypMA4kJvXdG/iM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Top10Played.pdb",
-      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/nejm41th4g-7u9drcer5j.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000069666992"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14353"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3UvMgiiOYMNzdlDhEEQvDahI/Md/GtCMuivn8HgtXdM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"8UEenY4YCA3Wg+dDtg5EOeQT3ew4NypMA4kJvXdG/iM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8UEenY4YCA3Wg+dDtg5EOeQT3ew4NypMA4kJvXdG/iM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Top10Played.pdb.gz",
-      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/nejm41th4g-7u9drcer5j.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14353"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3UvMgiiOYMNzdlDhEEQvDahI/Md/GtCMuivn8HgtXdM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3UvMgiiOYMNzdlDhEEQvDahI/Md/GtCMuivn8HgtXdM="
+          "Value": "sha256-ujsaGFrGSe7Ea2lmsnUlIAnExCGQRdaSLtPcugnNe8A="
         }
       ]
     },
@@ -70606,7 +70648,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29461"
+          "Value": "30485"
         },
         {
           "Name": "Content-Type",
@@ -70614,11 +70656,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"az4Vp8fPOvxLPuSwnk2bPY5Brfs2HwTtLgok1ab/gA4=\""
+          "Value": "\"HZ+v4XSwCfjY3DAmp4/PQYF6Qsm8s078JdkbqLkvJ/Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:22 GMT"
+          "Value": "Mon, 02 Dec 2024 03:59:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70628,18 +70670,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-az4Vp8fPOvxLPuSwnk2bPY5Brfs2HwTtLgok1ab/gA4="
+          "Value": "sha256-HZ+v4XSwCfjY3DAmp4/PQYF6Qsm8s078JdkbqLkvJ/Y="
         }
       ]
     },
     {
       "Route": "_framework/Top10Played.wasm",
-      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/lcdvsgxnpk-ntcue1305b.gz",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/lcdvsgxnpk-vt7hz7qob4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000077519380"
+          "Quality": "0.000075244545"
         }
       ],
       "ResponseHeaders": [
@@ -70649,15 +70691,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12899"
+          "Value": "13289"
         },
         {
           "Name": "ETag",
-          "Value": "\"pQycjkfNB+mEP8wBY1SGpbv7eBIPehq4yXBLLyafwng=\""
+          "Value": "\"ujsaGFrGSe7Ea2lmsnUlIAnExCGQRdaSLtPcugnNe8A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:23 GMT"
+          "Value": "Mon, 02 Dec 2024 03:59:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70677,19 +70719,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"az4Vp8fPOvxLPuSwnk2bPY5Brfs2HwTtLgok1ab/gA4=\""
+          "Value": "W/\"HZ+v4XSwCfjY3DAmp4/PQYF6Qsm8s078JdkbqLkvJ/Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-az4Vp8fPOvxLPuSwnk2bPY5Brfs2HwTtLgok1ab/gA4="
+          "Value": "sha256-HZ+v4XSwCfjY3DAmp4/PQYF6Qsm8s078JdkbqLkvJ/Y="
         }
       ]
     },
     {
       "Route": "_framework/Top10Played.wasm.gz",
-      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/lcdvsgxnpk-ntcue1305b.gz",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/lcdvsgxnpk-vt7hz7qob4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70698,7 +70740,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12899"
+          "Value": "13289"
         },
         {
           "Name": "Content-Type",
@@ -70706,11 +70748,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pQycjkfNB+mEP8wBY1SGpbv7eBIPehq4yXBLLyafwng=\""
+          "Value": "\"ujsaGFrGSe7Ea2lmsnUlIAnExCGQRdaSLtPcugnNe8A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:33:23 GMT"
+          "Value": "Mon, 02 Dec 2024 03:59:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70728,7 +70770,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pQycjkfNB+mEP8wBY1SGpbv7eBIPehq4yXBLLyafwng="
+          "Value": "sha256-ujsaGFrGSe7Ea2lmsnUlIAnExCGQRdaSLtPcugnNe8A="
         }
       ]
     },
@@ -71027,6 +71069,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-HdZRg4qLtDAid03vbqX40uk5thuvL+Oshy5fsyq70cA="
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.dt9ecvgd4x.json",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/cso1owb7si-dt9ecvgd4x.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003816793893"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "261"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WU1MejWVB55kl/MYVxwvvMreTbBaPARgekvC/s0rqhM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 14:39:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"MdEpMR1C1m4yxLE//P9vkVybURdzCXUeUP6jfVuzyGk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dt9ecvgd4x"
+        },
+        {
+          "Name": "label",
+          "Value": "appsettings.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MdEpMR1C1m4yxLE//P9vkVybURdzCXUeUP6jfVuzyGk="
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.dt9ecvgd4x.json",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/wwwroot/appsettings.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "301"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MdEpMR1C1m4yxLE//P9vkVybURdzCXUeUP6jfVuzyGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 14:39:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dt9ecvgd4x"
+        },
+        {
+          "Name": "label",
+          "Value": "appsettings.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MdEpMR1C1m4yxLE//P9vkVybURdzCXUeUP6jfVuzyGk="
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.dt9ecvgd4x.json.gz",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/cso1owb7si-dt9ecvgd4x.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "261"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WU1MejWVB55kl/MYVxwvvMreTbBaPARgekvC/s0rqhM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 14:39:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dt9ecvgd4x"
+        },
+        {
+          "Name": "label",
+          "Value": "appsettings.json.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WU1MejWVB55kl/MYVxwvvMreTbBaPARgekvC/s0rqhM="
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.json",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/cso1owb7si-dt9ecvgd4x.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003816793893"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "261"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WU1MejWVB55kl/MYVxwvvMreTbBaPARgekvC/s0rqhM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 14:39:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"MdEpMR1C1m4yxLE//P9vkVybURdzCXUeUP6jfVuzyGk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MdEpMR1C1m4yxLE//P9vkVybURdzCXUeUP6jfVuzyGk="
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.json",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/wwwroot/appsettings.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "301"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MdEpMR1C1m4yxLE//P9vkVybURdzCXUeUP6jfVuzyGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 14:39:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MdEpMR1C1m4yxLE//P9vkVybURdzCXUeUP6jfVuzyGk="
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.json.gz",
+      "AssetFile": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/obj/Debug/net9.0/compressed/cso1owb7si-dt9ecvgd4x.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "261"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WU1MejWVB55kl/MYVxwvvMreTbBaPARgekvC/s0rqhM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 14:39:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WU1MejWVB55kl/MYVxwvvMreTbBaPARgekvC/s0rqhM="
         }
       ]
     },

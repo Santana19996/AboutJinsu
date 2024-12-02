@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/Top10Played.styles.css"
     },
     {
+      "Id": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/wwwroot/appsettings.json",
+      "PackagePath": "staticwebassets/appsettings.json"
+    },
+    {
       "Id": "/Users/oscarsantana/RiderProjects/Top10Played/Top10Played/wwwroot/css/app.css",
       "PackagePath": "staticwebassets/css/app.css"
     },
