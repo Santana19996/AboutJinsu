@@ -24,14 +24,26 @@ namespace Top10Played
             // Configure HttpClient for API calls
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
-            // Register SpotifyService with the refresh token
+            // Register SpotifyService
             builder.Services.AddScoped<SpotifyService>(sp =>
             {
-                var spotifyService = new SpotifyService(sp.GetRequiredService<HttpClient>());
-
-                // Set the Spotify refresh token
+                var httpClient = sp.GetRequiredService<HttpClient>();
                 var configuration = sp.GetRequiredService<IConfiguration>();
+
+                var clientId = configuration["Spotify:ClientId"];
+                var clientSecret = configuration["Spotify:ClientSecret"];
                 var refreshToken = configuration["Spotify:RefreshToken"];
+
+                // Validate configuration values
+                if (string.IsNullOrWhiteSpace(clientId) || 
+                    string.IsNullOrWhiteSpace(clientSecret) || 
+                    string.IsNullOrWhiteSpace(refreshToken))
+                {
+                    throw new InvalidOperationException("Spotify ClientId, ClientSecret, and RefreshToken must be configured in appsettings.json.");
+                }
+
+                // Pass values to SpotifyService
+                var spotifyService = new SpotifyService(httpClient, clientId, clientSecret);
                 spotifyService.SetRefreshToken(refreshToken);
 
                 return spotifyService;
@@ -40,7 +52,7 @@ namespace Top10Played
             // Build the app
             var host = builder.Build();
 
-            // Log the secrets
+            // Log the secrets (for debugging only)
             var logger = host.Services.GetRequiredService<ILogger<Program>>();
             var config = host.Services.GetRequiredService<IConfiguration>();
             logger.LogInformation("Spotify ClientId: {ClientId}", config["Spotify:ClientId"]);

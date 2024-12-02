@@ -8,14 +8,17 @@ namespace Top10Played.Services;
 public class SpotifyService
 {
     private readonly HttpClient _httpClient;
+    private readonly string _clientId;
+    private readonly string _clientSecret;
     private string _accessToken;
     private string _refreshToken;
-    private readonly string _clientId = "ee8adc17d0964707b17540a70d165edf";
-    private readonly string _clientSecret = "c5c197c6ef5a4aba8d740982be3f93a1";
 
-    public SpotifyService(HttpClient httpClient)
+    // Constructor accepts configuration values for client ID and secret
+    public SpotifyService(HttpClient httpClient, string clientId, string clientSecret)
     {
-        _httpClient = httpClient;
+        _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+        _clientId = clientId ?? throw new ArgumentNullException(nameof(clientId));
+        _clientSecret = clientSecret ?? throw new ArgumentNullException(nameof(clientSecret));
     }
 
     public void SetRefreshToken(string refreshToken)
@@ -84,33 +87,6 @@ public class SpotifyService
 
         return recentlyPlayed?.Items ?? new List<SpotifyRecentlyPlayedItem>();
     }
-
-    public async Task<SpotifyTopTrack?> GetTopTrackAsync()
-    {
-        if (string.IsNullOrWhiteSpace(_accessToken))
-        {
-            await RefreshAccessTokenAsync();
-        }
-
-        var response = await _httpClient.GetAsync("https://api.spotify.com/v1/me/top/tracks?time_range=long_term&limit=1&offset=0");
-
-        if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
-        {
-            // Refresh token and retry
-            await RefreshAccessTokenAsync();
-            response = await _httpClient.GetAsync("https://api.spotify.com/v1/me/top/tracks?time_range=long_term&limit=1&offset=0");
-        }
-
-        response.EnsureSuccessStatusCode();
-
-        var json = await response.Content.ReadAsStringAsync();
-        var topTrackResponse = JsonSerializer.Deserialize<SpotifyTopTrackResponse>(json, new JsonSerializerOptions
-        {
-            PropertyNameCaseInsensitive = true
-        });
-
-        return topTrackResponse?.Items?.FirstOrDefault();
-    }
 }
 
 // Models for Token Response
@@ -173,26 +149,4 @@ public class SpotifyImage
 {
     [JsonPropertyName("url")]
     public string Url { get; set; }
-}
-
-// Models for Top Track Response
-public class SpotifyTopTrackResponse
-{
-    [JsonPropertyName("items")]
-    public List<SpotifyTopTrack> Items { get; set; } = new();
-}
-
-public class SpotifyTopTrack
-{
-    [JsonPropertyName("name")]
-    public string Name { get; set; }
-
-    [JsonPropertyName("artists")]
-    public List<SpotifyArtist> Artists { get; set; } = new();
-
-    [JsonPropertyName("album")]
-    public SpotifyAlbum Album { get; set; }
-
-    [JsonPropertyName("preview_url")]
-    public string PreviewUrl { get; set; }
 }
