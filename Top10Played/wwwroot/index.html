@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Top10Played</title>
     <base href="/" />
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link href="Top10Played.styles.css" rel="stylesheet" />
 </head>
-
 <body>
-    <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
-    </div>
+<div id="app"></div>
+<script>
+    async function fetchAndSearchYouTube(clientId, clientSecret, refreshToken, query) {
+        console.log("fetchAndSearchYouTube called with query:", query);
+        try {
+            // Refresh the access token
+            console.log("Fetching access token...");
+            const tokenResponse = await fetch('https://oauth2.googleapis.com/token', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams({
+                    client_id: clientId,
+                    client_secret: clientSecret,
+                    refresh_token: refreshToken,
+                    grant_type: 'refresh_token',
+                }),
+            });
 
+            if (!tokenResponse.ok) {
+                console.error('Failed to refresh access token:', await tokenResponse.text());
+                throw new Error('Could not refresh access token');
+            }
 
-    <script src="_framework/blazor.webassembly.js"></script>
+            const tokenData = await tokenResponse.json();
+            const accessToken = tokenData.access_token;
+            console.log("Access token received:", accessToken);
+
+            // Search YouTube videos
+            console.log("Searching YouTube for:", query);
+            const searchResponse = await fetch(
+                `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${encodeURIComponent(query)}&maxResults=1`,
+                {
+                    headers: {
+                        Authorization: `Bearer ${accessToken}`,
+                    },
+                }
+            );
+
+            if (!searchResponse.ok) {
+                console.error('YouTube API search failed:', await searchResponse.text());
+                throw new Error('YouTube API search failed');
+            }
+
+            const searchData = await searchResponse.json();
+            console.log("YouTube search results:", searchData);
+            return searchData.items.map((item) => ({
+                Title: item.snippet.title,
+                VideoId: item.id.videoId,
+                ThumbnailUrl: item.snippet.thumbnails.medium.url,
+            }));
+        } catch (error) {
+            console.error('Error in fetchAndSearchYouTube:', error);
+            throw error;
+        }
+    }
+</script>
+
+<script src="_framework/blazor.webassembly.js"></script>
 </body>
-
 </html>
