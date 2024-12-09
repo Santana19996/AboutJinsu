@@ -10,7 +10,6 @@
 </h1>
 
 <div style="font-family: 'Cinzel', serif; font-size: 18px; font-weight: bold; text-align: center; margin-top: 10px; color: #cccccc; background-color: #121212; padding: 15px; border-radius: 10px;">
-    <p>Ｉ'ｍ Ｙ☯ＵＮＧＪＩＮＳＵ ☾</p>
     <p>✧ Ｉｆ ｙｏｕ ｃａｎ ｖｉｂｅ ｗｉｔｈ ｔｈｅｓｅ ｓｏｎｇｓ, ｗｅ ｃａｎ ｂｅ ｆｒｉｅｎｄｓ.</p>
     <p>☠ Ｉｆ ｎｏｔ, ｇｅｔ ｂｅｔｔｅｒ ｍｕｓｉｃ ｔａｓｔｅ. ☠</p>
     <p style="margin-top: 15px;">👾 𝕀𝕟𝕥𝕖𝕣𝕖𝕤𝕥𝕤:</p>
@@ -41,9 +40,11 @@ else
 
                 @if (YouTubeVideos.TryGetValue(item.Track.Name, out var video))
                 {
-                    <a href="https://www.youtube.com/watch?v=@video.VideoId" target="_blank" style="text-decoration: none; color: #00ff00;">
-                        Watch on YouTube: @video.Title
-                    </a>
+                    <div>
+                        <button onclick="playVideo('@video.VideoId')" style="margin-right: 10px;">▶ Play</button>
+                        <button onclick="stopVideo('@video.VideoId')">⏹ Stop</button>
+                        <div id="player-@video.VideoId" style="display: none;"></div>
+                    </div>
                 }
                 else
                 {
