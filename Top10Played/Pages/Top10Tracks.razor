@@ -12,9 +12,6 @@
 <div style="font-family: 'Cinzel', serif; font-size: 18px; font-weight: bold; text-align: center; margin-top: 10px; color: #cccccc; background-color: #121212; padding: 15px; border-radius: 10px;">
     <p>✧ Ｉｆ ｙｏｕ ｃａｎ ｖｉｂｅ ｗｉｔｈ ｔｈｅｓｅ ｓｏｎｇｓ, ｗｅ ｃａｎ ｂｅ ｆｒｉｅｎｄｓ.</p>
     <p>☠ Ｉｆ ｎｏｔ, ｇｅｔ ｂｅｔｔｅｒ ｍｕｓｉｃ ｔａｓｔｅ. ☠</p>
-    <p style="margin-top: 15px;">👾 𝕀𝕟𝕥𝕖𝕣𝕖𝕤𝕥𝕤:</p>
-    <p>🎮 𝐆𝐚𝐦𝐞𝐫 • 🛡️ 𝐕𝐞𝐭𝐞𝐫𝐚𝐧 • 🏋️ 𝐆𝐲𝐦 • ✨ 𝐀𝐧𝐢𝐦𝐞</p>
-    <p>🎵 𝐒𝐮𝐢𝐜𝐢𝐝𝐞 𝐁𝐨𝐲𝐬 • 👻 𝐆𝐡𝐨𝐬𝐭𝐞𝐦𝐚𝐧𝐞 • 🅿 𝐏𝐡𝐨𝐧𝐤</p>
 </div>
 
 @if (!string.IsNullOrEmpty(ErrorMessage))
@@ -32,7 +29,7 @@ else
     <div class="tracks" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; background-color: #121212; padding-bottom: 20px;">
         @foreach (var item in RecentlyPlayed)
         {
-            <div class="track" style="border: 1px solid #444; border-radius: 8px; padding: 10px; text-align: center; width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); background: rgba(0, 0, 0, 0.9); transition: transform 0.2s, background-color 0.2s; hover: { transform: scale(1.05); background-color: #333; }">
+            <div class="track" style="border: 1px solid #444; border-radius: 8px; padding: 10px; text-align: center; width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); background: rgba(0, 0, 0, 0.9); transition: transform 0.2s, background-color 0.2s;">
                 <img src="@item.Track.Album.Images.FirstOrDefault()?.Url" alt="@item.Track.Name" style="width: 100%; height: auto; border-radius: 8px;" />
                 <h4 style="font-family: 'Cinzel', serif; font-size: 18px; font-weight: bold; color: #ff4500; margin-top: 10px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);">@item.Track.Name</h4>
                 <p style="font-size: 14px; color: #cccccc;">Artist: @string.Join(", ", item.Track.Artists.Select(a => a.Name))</p>
@@ -41,8 +38,18 @@ else
                 @if (YouTubeVideos.TryGetValue(item.Track.Name, out var video))
                 {
                     <div>
-                        <button onclick="playVideo('@video.VideoId')" style="margin-right: 10px;">▶ Play</button>
-                        <button onclick="stopVideo('@video.VideoId')">⏹ Stop</button>
+                        <button 
+                            onclick="@(() => TogglePlayPause(video.VideoId))" 
+                            style="background: linear-gradient(45deg, #ff4500, #ff6347); color: white; border: none; padding: 10px 20px; font-size: 14px; font-weight: bold; border-radius: 25px; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;">
+                            @if (playStates.ContainsKey(video.VideoId) && playStates[video.VideoId])
+                            {
+                                <span>⏸ Pause</span>
+                            }
+                            else
+                            {
+                                <span>▶ Play</span>
+                            }
+                        </button>
                         <div id="player-@video.VideoId" style="display: none;"></div>
                     </div>
                 }
@@ -58,6 +65,7 @@ else
 @code {
     private List<SpotifyRecentlyPlayedItem>? RecentlyPlayed;
     private Dictionary<string, YouTubeVideo> YouTubeVideos = new();
+    private Dictionary<string, bool> playStates = new(); // Track play states for each video
     private string? ErrorMessage;
 
     protected override async Task OnInitializedAsync()
@@ -76,6 +84,7 @@ else
                     if (video != null && video.Any())
                     {
                         YouTubeVideos[item.Track.Name] = video.First();
+                        playStates[video.First().VideoId] = false; // Initialize play state as false (not playing)
                     }
                 }
             }
@@ -104,6 +113,26 @@ else
         {
             Console.WriteLine($"Error fetching YouTube video for query '{query}': {ex.Message}");
             return new List<YouTubeVideo>();
+        }
+    }
+
+    private void TogglePlayPause(string videoId)
+    {
+        if (playStates.ContainsKey(videoId))
+        {
+            playStates[videoId] = !playStates[videoId];
+
+            if (playStates[videoId])
+            {
+                JSRuntime.InvokeVoidAsync("playVideo", videoId);
+            }
+            else
+            {
+                JSRuntime.InvokeVoidAsync("stopVideo", videoId);
+            }
+
+            // Force the UI to update
+            StateHasChanged();
         }
     }
 
