@@ -74,9 +74,7 @@
 <script>
     let players = {};
 
-    function onYouTubeIframeAPIReady() {
-        console.log('YouTube IFrame API is ready');
-    }
+ 
 
     function playVideo(videoId) {
         if (!players[videoId]) {
@@ -108,10 +106,8 @@
     })();
 
     async function fetchAndSearchYouTube(clientId, clientSecret, refreshToken, query) {
-        console.log("fetchAndSearchYouTube called with query:", query);
         try {
             // Refresh the access token
-            console.log("Fetching access token...");
             const tokenResponse = await fetch('https://oauth2.googleapis.com/token', {
                 method: 'POST',
                 headers: {
@@ -132,10 +128,10 @@
 
             const tokenData = await tokenResponse.json();
             const accessToken = tokenData.access_token;
-            console.log("Access token received:", accessToken);
+      
 
             // Search YouTube videos
-            console.log("Searching YouTube for:", query);
+          
             const searchResponse = await fetch(
                 `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${encodeURIComponent(query)}&maxResults=1`,
                 {
@@ -151,7 +147,6 @@
             }
 
             const searchData = await searchResponse.json();
-            console.log("YouTube search results:", searchData);
             return searchData.items.map((item) => ({
                 Title: item.snippet.title,
                 VideoId: item.id.videoId,

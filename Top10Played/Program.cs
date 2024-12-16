@@ -22,7 +22,8 @@ namespace Top10Played
             builder.RootComponents.Add<HeadOutlet>("head::after");
 
             // Configure HttpClient for API calls
-            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddScoped(sp => new HttpClient
+                { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             // Register SpotifyService
             builder.Services.AddScoped<SpotifyService>(sp =>
@@ -35,11 +36,12 @@ namespace Top10Played
                 var refreshToken = configuration["Spotify:RefreshToken"];
 
                 // Validate configuration values
-                if (string.IsNullOrWhiteSpace(clientId) || 
-                    string.IsNullOrWhiteSpace(clientSecret) || 
+                if (string.IsNullOrWhiteSpace(clientId) ||
+                    string.IsNullOrWhiteSpace(clientSecret) ||
                     string.IsNullOrWhiteSpace(refreshToken))
                 {
-                    throw new InvalidOperationException("Spotify ClientId, ClientSecret, and RefreshToken must be configured in appsettings.json.");
+                    throw new InvalidOperationException(
+                        "Spotify ClientId, ClientSecret, and RefreshToken must be configured in appsettings.json.");
                 }
 
                 // Pass values to SpotifyService
@@ -51,13 +53,6 @@ namespace Top10Played
 
             // Build the app
             var host = builder.Build();
-
-            // Log the secrets (for debugging only)
-            var logger = host.Services.GetRequiredService<ILogger<Program>>();
-            var config = host.Services.GetRequiredService<IConfiguration>();
-            logger.LogInformation("Spotify ClientId: {ClientId}", config["Spotify:ClientId"]);
-            logger.LogInformation("Spotify ClientSecret: {ClientSecret}", config["Spotify:ClientSecret"]);
-            logger.LogInformation("Spotify RefreshToken: {RefreshToken}");
 
             // Run the app
             await host.RunAsync();
